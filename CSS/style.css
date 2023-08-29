@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200;400;700;800&display=swap');
+
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+a{
+    text-decoration: none!important;
+    color: inherit;
+    font-family: inherit;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+button{
+    /* outline:none !important; */
+    font: inherit;
+    background:transparent;
+    border: none;
+}
+/* Header */
+.header{
+    background-color: yellow;
+}
+.header__nav{
+    display:flex; 
+    background-color: whitesmoke;
+    justify-content: space-around;
+    padding-block: 1rem;
+}
+
+ul{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+.signup,.signin {
+    padding: 5px;
+    border: 2px rgb(232, 232, 232) solid;
+    border-radius: 5px;
+    background-color: rgb(106, 106, 255);
+    color: whitesmoke;
+}
+
+.header__search input{
+    border: 1px rgba(0, 0, 0, 0.427);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.header__search button{
+    border: 1px rgba(0, 0, 0, 0.427);
+    border-radius: 10px;
+}
+
+.header__search img{
+    height: 25px;
+}
+
+.header__container{
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+    width: 90%;
+    margin-inline: auto;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+#home__img{
+    /* width: 50%; */
+    height: 100%;
+    position: absolute;
+    /* background-color: red; */
+    right: 0;
+    bottom: 0;
+}
+
+.header__container h1{
+    position: absolute;
+    font-size: 10rem;
+    left: 50px;
+    top: 10px;
+    color: white;
+}
+
+#home__img img{
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
+    /* object-position: left; */
+}
+
+.header__container h2{
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    font-size: 5rem;
+}
+
+.header__container p{
+    position: absolute;
+    top: 320px;
+    left: 70px;
+    font-size: 2rem;
+}
+
+main{
+    background-color: whitesmoke;
+    padding-block: 2rem;
+}
+
+.container__button{
+    background-color: rgb(223, 0, 0);
+    border: #fff 2px solid;
+    border-radius: 25px;
+    padding: 1rem;
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    color: #fff;
+    font: inherit;
+}
+
+.about,.committment,.believe{
+    margin-block: 3rem;
+    width: 30%;
+    padding: 4rem;
+    background-image: linear-gradient(rgb(75, 75, 75), rgba(112, 112, 112, 0.356));
+    border-radius: 10%;
+}
+
+.main__about{
+    padding-inline: 4rem;
+    height: 100vh;
+    background-color: whitesmoke;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.main__about h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: #fff;
+    color: hsl(4, 88%, 3%);
+}
+
+.footer_heading{
+    text-align: center;
+    margin-bottom: 1rem;
+    background: #000;
+    color: #fff;
+}
+
+.footer_contacts{
+    text-align: center;
+    margin-block: 10px;
+}
+
+.contacts_icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 10px;
+}
+
+.contacts_icon img{
+    height: 30px;
+}
+
+.aboutus{
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutus a{
+    display: block;
+}
+
+.main__home{
+    background-color: whitesmoke;
+}
+
+.products__category{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+.products__category div{
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.products__category div img{
+    /* height: inherit; */
+    /* width: inherit; */
+    object-fit: contain;
+    position: absolute;
+}
+
+.products__category .black{
+    background-color: black;
+    color: white;
+    width: 28%;
+}
+
+.products__category .yellow{
+    background-color: rgb(253, 230, 31);
+    color: white;
+    width: 28%;
+}
+
+.products__category .red{
+    background-color: rgb(245, 26, 26);
+    color: white;
+    width: 40%;
+}
+
+.products__category div button,.products__category div h3{
+    position:absolute;
+}
+
+.black img{
+    right: -127px;
+}
+
+.black h3{
+    top: 120px;
+    left: 30px;
+    font-size: 40px;
+    opacity: 0.5;
+}
+
+.black button{
+    top: 210px;
+    left: 50px;
+    border-radius:10px;
+    background-color: rgb(239, 30, 30);
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.yellow img{
+    right: 0px;
+    height: 500px;
+    top:-60px;
+}
+
+.yellow h3{
+    top: 120px;
+    left: 10px;
+    font-size: 50px;
+    opacity: 0.7;
+}
+
+.yellow button{
+    top: 210px;
+    left: 50px;
+    border-radius:10px;
+    background-color: white;
+    color: rgb(235, 61, 61);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.red img{
+    right: 140px;
+}
+
+.red h3{
+    top: 120px;
+    left: 300px;
+    font-size: 50px;
+    opacity: 0.7;
+}
+
+.red button{
+    top: 210px;
+    left: 320px;
+    border-radius:10px;
+    background-color: rgb(245, 244, 244);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sales__bar{
+    width: 90%;
+    height: 40vh;
+    background-color: red;
+    margin-inline: auto;
+    border-radius: 40px;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.sales__bar div{
+    position: absolute;
+    top: -500px;
+    left: 500px;
+}
+
+.sales__bar img{
+    height: 900px;
+}
+.sales__bar h3{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    font-size: 70px;
+    color: #efecec;
+    /* z-index: -1; */
+
+}
+
+.sales__bar h4{
+    position: absolute;
+    top: 140px;
+    left: 180px;
+    font-size: 35px;
+    color: #efecec;
+}
+
+.sales__bar button{
+    position: absolute;
+    top: 200px;
+    left: 210px;
+    background-color: #efecec;
+    color: rgb(235, 55, 55);
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.sales__bar p{
+    position: absolute;
+    width: 15%;
+    right: 10%;
+    top: 10%;
+    color: #fff;
+
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: lightgray;
+    opacity: 0.5;
+}
+
+.products{
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+.products h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.products__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.box__tshirt {
+    background-color: yellow;
+    height: 170px;
+    width: 200px;
+    margin-bottom: 5rem;
+    border-radius: 15px;
+    position: relative;
+    transition: overflow 500ms ease-in-out 0ms;
+}
+
+.box__tshirt:hover{
+    overflow: hidden;
+}
+
+
+.box__tshirt img{
+    border-radius: 15px;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    object-fit: cover;
+    transition: scale 500ms ease-in-out 0ms;
+}
+
+.box__tshirt img:hover{
+    scale: 1.2;
+}
+.box__tshirt a h5 {
+    position: absolute;
+    bottom: -30px;
+    left: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.box__tshirt h5 {
+    position: absolute;
+    bottom: -55px;
+    left: 5px;
+    font-size: 20px;
+}
+
+.clothing__container{
+    width: 90%;
+    height: 90vh;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    margin-inline: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.clothing__container h2{
+    position: absolute;
+    font-size: 50px;
+    left: 50px;
+    color: #fff;
+}
+
+.clothing__container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.products__grid img{
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.products__grid{
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-around;
+}
+
+.clothing__box{
+    background-color: rgba(180, 178, 178, 0.457);
+    border-radius: 10px;
+    padding: 10px;
+}
