@@ -334,8 +334,6 @@ footer{
     top: 30px;
     font-size: 70px;
     color: #efecec;
-    /* z-index: -1; */
-
 }
 
 .sales__bar h4{
@@ -479,3 +477,127 @@ footer{
     border-radius: 10px;
     padding: 10px;
 }
+
+/* CONTACT US */
+
+.contact__main{
+    background: url("../assets/contact_backDrop.jpg");
+    background-size: cover;
+    background-color: #efecec;
+}
+
+.contact__heading{
+    font-size: 6rem;
+    text-align: center;
+}
+
+.contact__main form {
+    width: 70%;
+    background-color: #9a9a9a;
+    margin-inline: auto;
+    padding-block: 1.5rem;
+}
+
+form input, form #message {
+    display: block;
+    width: 95%;
+    min-height: 50px;
+    margin-inline: auto;
+    margin-block: 1rem;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 2%;
+}
+
+form #message{
+    height: 300px;
+}
+
+.contact__main button{
+    position: absolute;
+    margin-block: 15px;
+    left: 48%;
+    padding: 12px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: black;
+    color: rgb(148, 145, 145);
+    cursor: pointer;
+}
+
+/* ORDER PAGE */
+
+.order__main{
+    width: 90%;
+    margin-inline: auto;
+}
+
+.order__main table {
+    border: #000 1px solid;
+    width: 95%;
+    margin-inline: auto;
+}
+
+.product__order, .order__product {
+    width: 60%;
+}
+
+.order__product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__quantity {
+    display: flex;
+}
+
+.product__container{
+    height: 100px;
+}
+
+.product__container img{
+    height: inherit;
+    object-fit: cover;
+}
+
+/* signin page */
+
+.login__heading h2{
+    font-size: 50%; 
+    color: white;
+    width: 50%;
+    height: 100vh;
+    display: inline-block;  
+    
+}
+
+.login__box form{
+     width: 30%;
+     margin-block: 10px;
+}
+
+.login__box form label{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    left: 20px;
+}
+
+.login__box input{
+    width: 90%;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    outline: none;
+}
+
+.login__box button{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+

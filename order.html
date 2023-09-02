@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopCart | Order</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopCart | Order</title>
+<link rel="stylesheet" href="/CSS/style.css">
+<script type="module" src="./JS/order.js" defer></script>
+<script type="module" src="./JS/orderHandler.js" defer></script>
 </head>
 <body>
-    <header class="header">
-      <nav class="header__nav">
-       <a href="index.html"> <img src="#" alt="our logo" class="logo"> </a>
-        <ul>
+<header class="header">
+    <nav class="header__nav">
+        <a href="index.html"> <img src="#" alt="our logo" class="logo"> </a>
+         <ul>
             <li><a href="about.html">About Us</a></li>
             <li><a href="clothing.html">Clothing</a></li>
             <li><a href="order.html">Order</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-        <div class="header__search">
+            <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+            <div class="header__search">
             <input type="text" placeholder="search items">
             <button><img src="/assets/search.svg" alt="search icon"></button>
-        </div>
-        <div class="header__sign">
+            </div>
+            <div class="header__sign">
             <button><a href="signup.html" class="signup">Sign Up</a></button>
             <button><a href="signin.html" class="signin">Sign In</a></button>
-        </div>
-      </nav>  
+            </div>
+        </nav>
     </header>
-    
+    <main class="order__main">
+        <section class="order__list">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="product__order">Products</th>
+                        <th class="price__order">Price</th>
+                        <th class="quantity__order">Quantity</th>
+                        <th class="subtotal__order">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="order__product">
+                            <div class="product__container">
+                                <img src="./assets/blazer.jpg" alt="product image">
+                            </div>
+                            <div class="product__description">
+                                <h3>Blazer</h3>
+                                <p>Items</p><span>2402 2018 1488</span>
+                                <p>Material</p><span>Cotton</span>
+                                <p>Color</p><span>Blue</span>
+                            </div>
+                        </td>
+                        <td class="order__price">
+                            <p><span>$148</span></p>
+                        </td>
+                        <td class="order__quantity">
+                            <button style="display: block;">-</button>
+                            <p><span>1</span></p>
+                            <button style="display: block;">+</button>
+                        </td>
+                        <td class="order__subtotal">
+                            <p><span>$148</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
