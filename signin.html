@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopCart | Sign In</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script type="module" src="./JS/signin.js" defer></script>
 </head>
 <body>
     <header>
-        <h2 class="login__heading">Welcome to ShopCart</h2>
+        <h1 class="login__heading">Welcome to ShopCart</h1>
     </header>
     <main>
-        <h3>Login to Continue</h3>
         <div class="login__box">
-     <form>
-            <label>Email</label> 
-            <input type="email" placeholder="Enter Email">
-            <label>Password</label> 
-            <input type="password" placeholder="Enter Password">
-            <a href="#"><button>Submit</button></a>
+            <h3>Login to Continue</h3>
+            <form>
+                <div class="email">
+                    <label>Email</label>
+                    <input class="email-input" type="email" placeholder="Enter Email">
+                </div>
+                <div class="password">
+                    <label>Password</label>
+                    <input class="password-input" type="password" placeholder="Enter Password">
+                </div>
+                <button type="button" class="submit-btn">Submit</button>
+            </form>
         </div>
-    </form>
     </main>
 </body>
 </html>
